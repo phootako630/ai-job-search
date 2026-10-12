@@ -1,0 +1,49 @@
+{
+  "_comment": "Default Grok Bot search config: senior AI/agentic, full-stack and frontend roles in Toronto and remote Canada. Copy to .grokbot/search_config.json (gitignored) to customise. Contains no personal data.",
+  "days": 14,
+  "limit_per_query": 15,
+  "exclude_title_regex": "\\b(intern|internship|co-?op|junior|jr\\.?|student|apprentice)\\b",
+  "locations": [
+    {
+      "name": "Toronto, ON",
+      "linkedin": {"location": "Toronto, Ontario, Canada"},
+      "freehire": {"country": "CA", "city": "Toronto"}
+    },
+    {
+      "name": "Remote Canada",
+      "_note": "LinkedIn location 'Remote' is GLOBAL (returns Japan, Brazil, Norway...). Use 'Canada' + remote filter instead.",
+      "linkedin": {"location": "Canada", "remote": "remote"},
+      "freehire": {"country": "CA", "remote": "remote"}
+    }
+  ],
+  "categories": [
+    {
+      "name": "p1-ai-agentic",
+      "priority": 1,
+      "queries": [
+        "senior software engineer AI agents",
+        "senior AI engineer agentic systems",
+        "senior LLM engineer"
+      ],
+      "freehire": {"seniority": "senior", "category": "ml_ai"}
+    },
+    {
+      "name": "p2-fullstack",
+      "priority": 2,
+      "queries": [
+        "senior full stack engineer TypeScript",
+        "senior full stack developer React Node"
+      ],
+      "freehire": {"seniority": "senior", "category": "fullstack"}
+    },
+    {
+      "name": "p3-frontend",
+      "priority": 3,
+      "queries": [
+        "senior frontend engineer React",
+        "senior frontend developer TypeScript"
+      ],
+      "freehire": {"seniority": "senior", "category": "frontend"}
+    }
+  ]
+}
