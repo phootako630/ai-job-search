@@ -118,3 +118,11 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Grok Bot (see GROKBOT.md): local-only overrides and working state.
+# .grokbot/ holds your own search_config.json, profile snapshots and run logs -
+# never commit it to a public fork.
+.grokbot/
+grokbot_state/
+*.local.md
+*.local.json
