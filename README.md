@@ -161,6 +161,10 @@ Postings are treated as untrusted input (the workflow follows no instructions em
 
 `/reset` is also available, see [Starting over](#starting-over) below.
 
+## Using with Grok Bot
+
+Prefer to drive this from chat with [Grok Bot](GROKBOT.md) instead of Claude Code? [GROKBOT.md](GROKBOT.md) maps every slash command to how Grok Bot runs it, ships a Toronto / remote-Canada default search config and a one-command scrape wrapper (`python3 tools/grokbot_scrape.py`), and explains LaTeX setup and how to keep your personal profile out of a public fork. 中文摘要在文件开头。
+
 ## File structure
 
 ```
